@@ -8,7 +8,7 @@
   }
   
   float x = width;
-  float y = height;
+  float y = 20;
   float x2 = 200;
   
   void loadData()
@@ -35,11 +35,19 @@
   ArrayList<Product> products = new ArrayList<Product>();
   ArrayList<Product> bill = new ArrayList<Product>();
   
-void drawtill(){
-  
+void displayBill(){
+  fill(255);
+  rect(500, 40, 250, 500);
   
   
 }
+
+void mousePressed(){
+  
+  
+}
+
+
     int i = 0;
 void drawmenu(){
 
@@ -51,6 +59,7 @@ void drawmenu(){
     fill(255);
     rect(100,y+=20,155,55);
     fill(50);
+    //String p.price = nf(p, 2, 2);   
     text(p.name + "       " + p.price, 180, y+=50);
     i++;
     }
@@ -59,6 +68,7 @@ void drawmenu(){
 void draw(){
   //drawtill();
   drawmenu();
+  displayBill();
   textSize(20);
   textAlign(CENTER, BOTTOM);
   text("Cafe Rubis Till System", 400, 30);
