@@ -26,7 +26,7 @@
   {
    for(Product p:products)
    {
-    println(p.name + p.price);
+    println(p.name + " " + p.price);
    }  
 
    
@@ -38,11 +38,16 @@
 void displayBill(){
   fill(255);
   rect(500, 40, 250, 500);
+  textSize(10);
+  fill(0);
+  text("Your Bill", 640, 60);
   
   
 }
 
 void mousePressed(){
+  //for
+  
   
   
 }
@@ -70,6 +75,7 @@ void draw(){
   drawmenu();
   displayBill();
   textSize(20);
+  fill(0);
   textAlign(CENTER, BOTTOM);
   text("Cafe Rubis Till System", 400, 30);
   line(400,40,400,560);
