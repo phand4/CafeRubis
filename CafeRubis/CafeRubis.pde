@@ -26,12 +26,9 @@
   {
    for(Product p:products)
    {
-    println(p.name);
+    println(p.name + p.price);
    }  
-   for(Product b:bill)
-   {
-   println(b.price);
-   }  
+
    
   }
   
@@ -49,11 +46,12 @@ void drawmenu(){
   for(Product p:products){
 
     if(i < 7){
-    textAlign(CENTER);
+    textAlign(CENTER, LEFT);
     //stroke(255);
+    fill(255);
+    rect(100,y+=20,155,55);
     fill(50);
-
-    text(p.name + "       " + p.price, x, y+=50);
+    text(p.name + "       " + p.price, 180, y+=50);
     i++;
     }
   }
@@ -61,4 +59,8 @@ void drawmenu(){
 void draw(){
   //drawtill();
   drawmenu();
+  textSize(20);
+  textAlign(CENTER, BOTTOM);
+  text("Cafe Rubis Till System", 400, 30);
+  line(400,40,400,560);
 }
